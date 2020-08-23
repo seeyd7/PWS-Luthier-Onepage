@@ -1,0 +1,15 @@
+.grid-container-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 1fr;
+    grid-template-areas: 
+    "nav nav"
+    "content content"
+    ;
+}
+nav {
+    grid-area: nav;
+}
+.content {
+    grid-area: content;
+}

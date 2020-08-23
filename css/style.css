@@ -5,6 +5,7 @@
   outline: 0 !important;
   font-family: 'Roboto', sans-serif;
 }
+/* Scrollbar */
 ::-webkit-scrollbar{
   width: 10px;
   background-color: #f1f1f1;
@@ -15,6 +16,8 @@
 ::-webkit-scrollbar-thumb {
   background-color: #353b48;
 }
+/* Scrollbar */
+/* Menu */
 li {
   list-style-type: none;
 }
@@ -110,3 +113,13 @@ nav{
     right: 0;
     }
   }
+  /* Menu */
+  /* Main */
+  .content {
+    height: 88vh;
+    background-image: url(../img/wallpaper.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Main */
