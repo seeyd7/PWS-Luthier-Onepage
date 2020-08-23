@@ -1,0 +1,92 @@
+nav{
+    height: 12vh;
+    padding: 0 20px;
+    color: rgb(96, 99, 96);
+  }
+  .logo{
+    line-height: 12vh;
+    float: left;
+    text-transform: uppercase;
+  }
+  .menu{
+    float: right;
+    line-height: 12vh;
+  }
+  .menu a{
+    font-size: x-large;
+    color: rgb(96, 99, 96);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+    transition: 0.6s;
+  }
+  .menu a:hover{
+    padding-bottom: 10px;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 12vh;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: rgb(22, 22, 22);
+    border-bottom: 1px solid  rgb(201, 7, 7);
+  }
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+  @media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+    z-index: 999;
+  }
+  .menu a{
+    color: rgb(117, 117, 117);
+    display: block;
+    padding: 20px;
+  }
+  .menu a:hover{
+    color: white;
+    border-bottom: none;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: rgb(117, 117, 117);
+  }
+  .hide-menu-btn:hover{
+    color: white;
+    border: none;
+  }
+  .show-menu-btn:hover{
+    border: none;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+    }
+  }
