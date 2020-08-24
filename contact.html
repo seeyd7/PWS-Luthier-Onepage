@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luthier Syfon</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Styles -->
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav>
+            <h2 class="logo">Logo</h2>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+              <i class="fas fa-ellipsis-h"></i>
+            </label>
+            <ol class="menu">
+              <li>
+                <a href="main.html">Strona główna</a>
+                <a href="gallery.html">Galeria</a>
+                <a href="contact.html">Kontakt</a>
+                <label for="chk" class="hide-menu-btn">
+                  <i class="fas fa-times"></i>
+                </label>
+              </li>
+            </ol>
+        </nav>
+    </header>
+    <!-- Menu -->
+    <section class="contact-info">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="item">
+                  <i class="fas fa-mobile-alt fa-4x"></i>
+                  <p>+48 665544997</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="item">
+                  <i class="fas fa-envelope fa-4x"></i>
+                  <p>example@example.com</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="item">
+                  <i class="fas fa-map-marker-alt fa-4x"></i>
+                  <p>Poland, Example street, 001-100 Warsaw</p>
+                </div>
+              </div>
+          </div>
+    </div>
+    </section>
+    <!-- Kontakt-form -->
+        <section class="contact-section">
+            <h1>Kontakt</h1>
+            <div class="border"></div>
+                <form action="#" class="contact-form" method="post"> 
+                    <input type="text" class="contact-form-text" placeholder="Imię i nazwisko" name="nazwisko" required>
+                    <input id="email" type="email" class="contact-form-text" placeholder="E-mail" name="email" required data-ok="emailCheck">
+                    <input type="text" class="contact-form-text" placeholder="Numer telefonu" name="telefon" required>
+                    <input type="text" class="contact-form-text" placeholder="Temat" name="tresc" required>
+                    <input type="text" class="contact-form-text" placeholder="Twoja wiadmość" name="tresc" required>
+                    <input id='validate' type="submit" class="contact-form-btn" value="Wyślij">
+                </form>
+        </section>
+    <!-- Kontakt-form -->
+    <!-- Stopka -->
+    <footer>
+      <section class="top-footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d576.3609302230147!2d18.370290711828847!3d53.199972014038146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470324a7333ed0c1%3A0x11d727fd57ba9288!2sRaciniewo!5e1!3m2!1spl!2spl!4v1597316789741!5m2!1spl!2spl" frameborder="0" style="border: white 1px solid;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <a href="facebook.com"><i class="fab fa-facebook fa-3x"></i></a>
+      </section>
+      <section class="bottom-footer">IT CROWD 2020 <i class="far fa-copyright"></i> ALL RIGHTS RESERVED</section>
+    </footer>
+    <!-- Stopka -->
+</body>
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/gotop.js"></script>
+  <!-- Scripts -->
+</html>
