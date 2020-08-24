@@ -10,6 +10,16 @@
     "footer footer"
     ;
 }
+.grid-container-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh auto 45vh;
+    grid-template-areas:
+    "nav nav"
+    "aside aside"
+    "footer footer"
+    ;
+}
 nav {
     grid-area: nav;
 }
