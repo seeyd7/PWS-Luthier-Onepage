@@ -1,9 +1,30 @@
+/* 
+Theme Name: IT-Crowt Luthier
+Author: IT Crowd
+Description: Funkcjonalny i responsywny szablon CMS
+Version: 1.0
+*/
 *{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   outline: 0 !important;
   font-family: 'Roboto', sans-serif;
+}
+#back2Top {
+  position: fixed;
+  z-index: 999;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(201, 7, 7);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  outline: none !important;
+  display: none;
 }
 /* Scrollbar */
 ::-webkit-scrollbar{
@@ -159,7 +180,7 @@ nav{
   }
   .baner-right {
     line-height: 6vh;
-    display: flex;
+    display: none;
     height: 100%;
     width: 50%;
     text-align: center;
@@ -328,7 +349,7 @@ q {
   /* Opinie */
   /* Galeria */
   .container-fluid h1 {
-    color: white;
+    color: black;
   }
   .gallery{
     min-height: 100%;
@@ -339,8 +360,7 @@ q {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgb(246,92,242);
-    background: radial-gradient(circle, rgba(246,92,242,0.8323704481792717) 0%, rgba(121,9,117,0.6895133053221288) 54%, rgba(0,212,255,0.5634628851540616) 100%);
+    background-image: url(../img/gallery.jpg);
   }
   .gallery img {
     margin: 5% 1% 5%;
@@ -390,7 +410,3 @@ q {
     }
   }
   /* Media */
-
-  /* IT CROWD */
-  /* Sierpień 2020 */
-  /* Wszelkie prawa zastrzeżone */
