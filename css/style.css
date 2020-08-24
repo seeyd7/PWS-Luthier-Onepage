@@ -325,11 +325,14 @@ article {
   background: rgba(0, 0, 0, 0.171);
 }
 .mySlides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 35vh;
   background: url(../img/wallpaper.jpg);
   background-size: cover;
   background-attachment: fixed;
-  padding: 6%;
   text-align: center;
 }
 .prev, .next {
@@ -601,16 +604,6 @@ iframe {
     }
     .author {
       font-size: 30px;
-    }
-  }
-  @media screen and (max-width:430px) {
-    .mySlides {
-      padding: 9vh;
-    }
-  }
-  @media screen and (max-width:320px) {
-    .mySlides {
-      padding: 6vh;
     }
   }
   @media screen and (max-width:1024px) {
