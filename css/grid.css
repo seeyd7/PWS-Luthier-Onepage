@@ -1,15 +1,27 @@
 .grid-container-main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12vh 1fr;
-    grid-template-areas: 
+    grid-template-columns: 100% 1fr;
+    grid-template-rows: 12vh 100vh 100vh auto 45vh;
+    grid-template-areas:
     "nav nav"
-    "content content"
+    "main main"
+    "article article"
+    "aside aside"
+    "footer footer"
     ;
 }
 nav {
     grid-area: nav;
 }
-.content {
-    grid-area: content;
+main {
+    grid-area: main;
+}
+article {
+    grid-area: article;
+}
+aside {
+    grid-area: aside;
+}
+footer {
+    grid-area: footer;
 }
