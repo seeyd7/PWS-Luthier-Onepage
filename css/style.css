@@ -347,6 +347,18 @@ q {
     filter: grayscale(0%);
   }
   /* Galeria */
+  /* Stopka */
+  .bottom-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-size: small;
+  }
+  /* Stopka */
   /* Media */
   @media screen and (max-width:450px) {
     q {
