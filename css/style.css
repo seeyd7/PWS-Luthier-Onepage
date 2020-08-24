@@ -112,7 +112,7 @@ nav{
   }
   /* Menu */
   /* Main */
-  .content {
+  .baner {
     height: 88vh;
     background-image: url(../img/wallpaper.jpg);
     background-attachment: fixed;
@@ -120,19 +120,19 @@ nav{
     background-size: cover;
     display: flex;
   }
-  .content-left h1, .content-right h1{
+  .baner-left h1, .baner-right h1{
     font-size: calc(2vw + 6vh);
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 3px rgb(0, 0, 0)
   }
-  .content-left p, .content-right p{
+  .baner-left p, .baner-right p{
     color: white;
     font-size: calc(1vw + 3.5vh);
     font-weight: bold;
     -webkit-text-stroke: 2px rgb(0, 0, 0)
   }
-  .content-left a, .content-right a{
+  .baner-left a, .baner-right a{
     color: white;
     text-decoration: none;
     background: rgb(96, 99, 96);
@@ -140,10 +140,10 @@ nav{
     transition: .6s;
     line-height: initial;
   }
-  .content-left a:hover, .content-right a:hover {
+  .baner-left a:hover, .baner-right a:hover {
     background-color: rgb(22, 22, 22);
   }
-  .content-left {
+  .baner-left {
     line-height: 6vh;
     display: flex;
     height: 100%;
@@ -154,10 +154,10 @@ nav{
     align-items: center;
     justify-content: center;
   }
-  .content-left:hover {
+  .baner-left:hover {
     background: rgba(22, 22, 22, 0.5);
   }
-  .content-right {
+  .baner-right {
     line-height: 6vh;
     display: flex;
     height: 100%;
@@ -168,7 +168,179 @@ nav{
     align-items: center;
     justify-content: center;
   }
-  .content-right:hover {
+  .baner-right:hover {
     background: rgba(22, 22, 22, 0.5);
   }
   /* Main */
+  /* Article */
+article {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blogs{
+  display: flex;
+  justify-content: space-around;
+}
+.blog{
+  overflow: hidden;
+  position: relative;
+  height: 40vh;
+  width: auto;
+  cursor: pointer;
+}
+.blog img{
+  width: auto;
+  height: 100%;
+}
+.blog-description{
+  position: absolute;
+  bottom: -40px;
+  background: #333333ca;
+  width: 100%;
+  padding: 40px;
+  transition: .3s linear;
+}
+.blog h2 {
+  font-size: 25px;
+}
+.blog:hover .blog-description{
+  bottom: 0;
+}
+.categorie{
+  display: inline-block;
+  color: rgb(201, 7, 7);
+  font-size: 18px;
+  position: relative;
+  padding: 0 22px;
+}
+.categorie::before{
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: rgb(201, 7, 7);
+  left: 0;
+  top: 13px;
+}
+.categorie::after{
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: rgb(201, 7, 7);
+  right: 0;
+  top: 13px;
+}
+.title{
+  color: #fff;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.date{
+  font-style: italic;
+  color: rgb(201, 7, 7);
+  margin-bottom: 20px;
+}
+.btn{
+  display: inline-block;
+  color: rgb(201, 7, 7);
+  text-decoration: none;
+  border: 1px solid rgb(201, 7, 7);
+  padding: 6px 20px;
+  opacity: 0;
+  transition: .3s linear;
+}
+.blog:hover .btn{
+  opacity: 1;
+}
+.btn:hover{
+  color: #fff;
+  background: rgb(201, 7, 7);
+}
+  /* Article */
+.border {
+  width: 40%;
+  height: 10px;
+  background: rgb(201, 7, 7);
+  margin: 40px auto;
+}
+  /* Opinie */
+.slideshow-container {
+  position: relative;
+  height: 35vh;
+  background: rgba(0, 0, 0, 0.171);
+}
+.mySlides {
+  height: 35vh;
+  background: url(../img/wallpaper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 12.2vh;
+  text-align: center;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  background: rgb(96, 99, 96);
+  transition: .6s;
+}
+.prev i, .next i{
+  transition: 0.6s;
+}
+.prev:hover > i, .next:hover > i{
+  color: white;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+q {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-text-stroke: 2px rgb(0, 0, 0)
+}
+
+.author {
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke: 2px rgb(0, 0, 0)
+}
+  /* Opinie */
+  /* Media */
+  @media screen and (max-width:450px) {
+    q {
+      font-size: 25px;
+    }
+    .author {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width:430px) {
+    .mySlides {
+      padding: 9vh;
+    }
+  }
+  @media screen and (max-width:320px) {
+    .mySlides {
+      padding: 6vh;
+    }
+  }
+  /* Media */
