@@ -80,10 +80,12 @@ nav{
 .show-menu-btn i{
   line-height: 12vh;
 }
+.menu a {
+  border-bottom:rgb(201, 7, 7);
+}
 .menu a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover{
-  color: rgb(22, 22, 22);
   border-bottom: 1px solid  rgb(201, 7, 7);
 }
 #chk{
@@ -116,6 +118,7 @@ nav{
   .menu a:hover{
     color: white;
     border-bottom: none;
+    padding-bottom: 20px;
   }
   .hide-menu-btn{
     position: absolute;
