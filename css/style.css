@@ -440,7 +440,7 @@ q {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .contact-section-h1{
@@ -451,7 +451,7 @@ q {
 .contact-form{
   height: 100%;
   max-width: 600px;
-  margin: auto;
+  margin-top: 3%;
   padding: 0 5px;
   overflow: hidden;
   padding-bottom: 4%;
@@ -459,7 +459,7 @@ q {
 .contact-form-text {
   display: block;
   height: auto;
-  width: 100vw;
+  width: 90vw;
   margin: 2% 0;
   border: 0;
   background: #ddd;
