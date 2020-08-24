@@ -181,9 +181,10 @@ article {
 }
 .blogs{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .blog{
+  margin: 1.5% 1.5% 1.5%;
   overflow: hidden;
   position: relative;
   height: 40vh;
@@ -290,7 +291,7 @@ article {
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  background: rgb(96, 99, 96);
+  background: white;
   transition: .6s;
 }
 .prev i, .next i{
@@ -324,6 +325,28 @@ q {
   -webkit-text-stroke: 2px rgb(0, 0, 0)
 }
   /* Opinie */
+  /* Galeria */
+  .gallery{
+    min-height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    /* background: radial-gradient(circle, rgb(240, 218, 227) 0%, rgb(165, 186, 211) 100%); */
+  }
+  .gallery img {
+    margin: 5% 1% 5%;
+    cursor: pointer;
+    width: 95%;
+    transition: 0.6s ease-in-out;
+    filter: grayscale(100%);
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+  }
+  /* Galeria */
   /* Media */
   @media screen and (max-width:450px) {
     q {
