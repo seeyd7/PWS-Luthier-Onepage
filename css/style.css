@@ -329,7 +329,7 @@ article {
   background: url(../img/wallpaper.jpg);
   background-size: cover;
   background-attachment: fixed;
-  padding: 12.2vh;
+  padding: 6%;
   text-align: center;
 }
 .prev, .next {
@@ -366,7 +366,7 @@ article {
 q {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   -webkit-text-stroke: 1.5px rgb(0, 0, 0)
 }
