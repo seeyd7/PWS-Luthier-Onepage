@@ -162,10 +162,11 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
   }
   .baner-left a, .baner-right a{
+    border-radius: 20px;
     color: white;
     text-decoration: none;
     background: rgb(96, 99, 96);
-    padding: 3%;
+    padding: 15px; /*Poprawka*/
     transition: .6s;
     line-height: initial;
   }
@@ -295,7 +296,7 @@ article {
   font-size: 20px;
   text-decoration: none !important;
   background: rgb(96, 99, 96);
-  padding: 1%;
+  padding: 15px; /*Poprawka*/
   transition: .6s;
   line-height: initial;
   align-self: center;
@@ -412,6 +413,7 @@ q {
   }
   /* Galeria */
   /* Kontakt */ 
+  /* Poprawka */
 .row {
   justify-content: center;
 } 
