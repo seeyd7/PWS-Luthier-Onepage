@@ -280,7 +280,7 @@ article {
   color: rgb(201, 7, 7);
   text-decoration: none;
   border: 1px solid rgb(201, 7, 7);
-  padding: 1% 6%;
+  padding: 1% 6%; /*Poprawka*/
   opacity: 0;
   transition: .3s linear;
 }
